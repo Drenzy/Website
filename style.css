@@ -11,13 +11,10 @@
     background-repeat: no-repeat;
     width: 390px;
     height: 100vh;
-   }  
-   .email-section{
-       display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   } 
+   }
+   .form{
+       transform: scale(0.9);
+   }
 }
 
 body{
@@ -133,7 +130,6 @@ body .about-text{
 
 
 .email-section{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +137,6 @@ body .about-text{
 }
 
 .email-container{
-    width: 50%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;

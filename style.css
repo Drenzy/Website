@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*Scaling on mobile*/
 @media (max-width: 768px){
    body{
     background-image: url(background.jpg);
@@ -13,7 +14,7 @@
     height: 100vh;
    }
    .form{
-       transform: scale(0.9);
+       transform: scale(0.1);
    }
 }
 
@@ -32,7 +33,7 @@ body{
 
 .home-logo a{
     font-size: xx-large;
-    color: #fff;
+    color: rgb(187, 80, 80);
 }
 
 /*About logo style*/
@@ -43,7 +44,7 @@ body{
 
 .about-logo a{
     font-size: xx-large;
-    color: #fff;
+    color: rgb(187, 80, 80);
 }
 
 /*Project logo style*/
@@ -54,7 +55,7 @@ body{
 
 .project-logo a{
     font-size: xx-large;
-    color: #fff;
+    color: rgb(187, 80, 80);
 }
 
 /*Email logo style*/
@@ -65,7 +66,7 @@ body{
 
 .email-logo a{
     font-size: xx-large;
-    color: #fff;
+    color: rgb(187, 80, 80);
 }
 
 
@@ -92,8 +93,8 @@ ul{
 }
 
 .header .navbar .menu ul li a{
-    color: #fff;
-    font-size: 20px;
+    color: rgb(187, 80, 80);
+    font-size:larger;
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -107,14 +108,25 @@ ul{
     opacity: 0.3;
 }
 
-body .about-text{
-    font-size: large;
+.about-text {
+    display: grid;
+    color: rgb(187, 80, 80);
+    background-color: black;
+    letter-spacing: 1px;
+    font-size: x-large;
     text-align: center;
-    color: #fff;
-    padding: 0px 10px 0px 10px;
+    margin: 2% 10% 0% 10%;
 }
 
+.about-text p{
+    margin: 1% 15% 1% 15%;
+    font-size: large;
+}
 
+.photo-me{
+    width: 18%;
+    margin: 2% 40% 0% 40%;
+}
 /*Grid code for*/
 .grid-container ul{
     display: grid;
@@ -173,7 +185,7 @@ button[type="submit"]{
     font-size: 24px;
     border-radius: 8px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#3CA7B4;
+    color:rgb(187, 80, 80);
     text-align: center;
     cursor: pointer;
     margin-top: 10px;

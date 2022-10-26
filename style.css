@@ -4,11 +4,68 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px){
+   body{
+    background-image: url(background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 390px;
+    height: 100vh;
+   } 
+   
+}
+
 body{
     width: 100%;
-    background-image: url(backgroundone.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
+    font-family:'Times New Roman', Times, serif;
 }
+
+/*home logo style*/
+.home-logo{
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 1%;
+}
+
+.home-logo a{
+    font-size: xx-large;
+    color: #fff;
+}
+
+/*About logo style*/
+.about-logo{
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 1%;
+}
+
+.about-logo a{
+    font-size: xx-large;
+    color: #fff;
+}
+
+/*Project logo style*/
+.project-logo{
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 1%;
+}
+
+.project-logo a{
+    font-size: xx-large;
+    color: #fff;
+}
+
+/*Email logo style*/
+.email-logo{
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 1%;
+}
+
+.email-logo a{
+    font-size: xx-large;
+    color: #fff;
+}
+
 
 a,a:hover {
     text-decoration: none;
@@ -19,42 +76,28 @@ ul{
 }
 
 .header{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /*background-image: url(blackbackground.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    */
+    background-color: black;
 }
 
-.header .navbar {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px 0px 20px;
+.header .navbar .menu{
+    padding: 0px 0px 10px 20px;
+    margin-left: 39%;
 }
-.header .navbar .logo a{
-    color: #fff;
-    font-family: sans-serif;
-}
+
 .header .navbar .menu ul li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .header .navbar .menu ul li a{
     color: #fff;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 .header .navbar .menu  ul li a:hover{
-    color: #c328c3;
+    color: red;
 }
 
 .header .navbar .menu  ul li a.sep{
@@ -62,38 +105,117 @@ ul{
     opacity: 0.3;
 }
 
-.header .contact-info {
-    float: right;
-}
-
-.header .contact-info ul{
-    margin-left: 41px;
-}
-
-.header .contact-info ul li{
-    display: inline-block;
-    
-}
-
-.header .contact-info ul li a{
-    color: #fff;
-    font-size: 15px;
-    transition: all 0.3s;
-    
-}
-
-.header .contact-info ul li a:hover{
-    color: #c328c3;
-}
-
-.header .contact-info ul li a.sep{
-    margin: 0 28px;
-    opacity: 0.3;
-}
-
 body .about-text{
-    margin-top: 1%;
+    font-size: large;
     text-align: center;
     color: #fff;
+    padding: 0px 10px 0px 10px;
+}
+
+
+/*Grid code for*/
+.grid-container ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-container ul li a{
+    color: #fff;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+
+.email-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email-container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20xp #00000010;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #CFCFCF;
+    margin-top: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 8px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#3CA7B4;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: #3CA7B4;;
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: green;
+    animation: status 4s ease forwards;
+    color: white;
+}
+
+#status.error{
+    background-color: red;
+    animation: status 4s ease  forwards;
+    color: white;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }

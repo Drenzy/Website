@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header code with navbar and contact email-->
+    <div class="header">
+        <!--Home logo-->
+        <div class="email-logo">
+            <a href="">Email</a>
+        </div>
+
+        <!--Navbar-->
+        <div class="navbar">    
+            <!--Menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="email.html">Email</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="email-section">
+        <div class="email-container">
+            <form action="https://formspree.io/f/xkneqrzr" method="POST" id="my-form">
+
+                <div class="form-group">
+                    <label for="firstname">Fornavn</label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Efternavn</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Besked</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

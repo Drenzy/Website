@@ -11,8 +11,13 @@
     background-repeat: no-repeat;
     width: 390px;
     height: 100vh;
+   }  
+   .email-section{
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
    } 
-   
 }
 
 body{
@@ -136,7 +141,7 @@ body .about-text{
 }
 
 .email-container{
-    width: 90%;
+    width: 50%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
@@ -185,7 +190,7 @@ button[type="submit"]:hover{
 }
 
 #status{
-    width: 50%;
+    width: 90%;
     max-width: 500px;
     text-align: center;
     padding: 10px;

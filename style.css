@@ -5,7 +5,7 @@
 }
 
 /*Scaling on mobile*/
-@media (max-width: 768px){
+@media (max-width: 844px){
    body{
     background-image: url(background.jpg);
     background-size: contain;
@@ -13,8 +13,12 @@
     width: 390px;
     height: 100vh;
    }
-   .form{
-       transform: scale(0.1);
+   .about-text {
+    height: 623px;
+   }
+
+   .about-txt{
+       font-size: small;
    }
 }
 
@@ -22,7 +26,7 @@ body{
     width: 100%;
     background-image: url(background.jpg);
     background-size: cover;
-    font-family:'Times New Roman', Times, serif;
+
 }
 
 /*home logo style*/
@@ -112,15 +116,15 @@ ul{
     display: grid;
     color: rgb(187, 80, 80);
     background-color: black;
+    border-radius: 3rem;
     letter-spacing: 1px;
     font-size: x-large;
     text-align: center;
     margin: 2% 10% 0% 10%;
 }
 
-.about-text p{
+.about-txt{
     margin: 1% 15% 1% 15%;
-    font-size: large;
 }
 
 .photo-me{
